@@ -1,10 +1,11 @@
-// require('dotenv').config({path: './env'})
-import dotenv from "dotenv"
+// require('dotenv').config()
+import dotenv from 'dotenv';
 import connectDB from "./db/index.js";
+
 import {app} from './app.js'
-dotenv.config({
-    path: './.env'
-})
+// dotenv.config({
+//     path: './env'
+// })
 
 
 
@@ -29,40 +30,6 @@ connectDB()
 
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-//from chat gpt
-// require('dotenv').config({path: './env'})
-import dotenv from "dotenv";
-import connectDB from './db/index.js';
-import express from "express";
-
-dotenv.config({
-    path: './env'
-});
-
-const app = express();
-
-(async () => {
-    try {
-        await connectDB(); // Connect to MongoDB
-        app.listen(process.env.PORT, () => {
-            console.log(`App is listening on port ${process.env.PORT}`);
-        });
-    } catch (error) {
-        console.error("Initialization error:", error);
-    }
-})();
-*/
 
 
 
